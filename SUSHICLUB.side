@@ -1,0 +1,634 @@
+{
+  "id": "dc3636db-7fc7-488a-80f1-0812192a8460",
+  "version": "2.0",
+  "name": "SUSHICLUB",
+  "url": "https://www.sushiclub.com.ar/",
+  "tests": [{
+    "id": "bec5171b-c3db-4591-a656-a35ac9c07f61",
+    "name": "VerCartaDelivery",
+    "commands": [{
+      "id": "fd4e6619-3614-4384-a283-826a9ec75a34",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.sushiclub.com.ar/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "87f3428d-e35c-4f41-a8e1-80060cf73101",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ab8231fc-0609-4a48-9b91-bdb6aade44a1",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuMobile > li:nth-child(7) > a",
+      "targets": [
+        ["css=#menuMobile > li:nth-child(7) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Carta Delivery')])[2]", "xpath:link"],
+        ["xpath=//ul[@id='menuMobile']/li[7]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'carta_delivery.php')])[2]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[7]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6d33082-8b6c-4cf5-af53-ce1a40ec7a1e",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.imgBannerShop",
+      "targets": [
+        ["css=.imgBannerShop", "css:finder"],
+        ["xpath=//div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c58c8d61-d785-4e49-8f38-c98553a56c81",
+      "comment": "",
+      "command": "click",
+      "target": "id=sucursal2",
+      "targets": [
+        ["id=sucursal2", "id"],
+        ["name=sucursal", "name"],
+        ["css=#sucursal2", "css:finder"],
+        ["xpath=//select[@id='sucursal2']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b55af289-04e6-4e27-b220-37a8b8330709",
+      "comment": "",
+      "command": "select",
+      "target": "id=sucursal2",
+      "targets": [],
+      "value": "label=Hudson"
+    }, {
+      "id": "7eb2ac07-63e6-4899-883c-f1a4ed0c3d18",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btnnewQ",
+      "targets": [
+        ["css=.btnnewQ", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ver carta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "612241a4-2637-44ba-85af-301c7b39d263",
+    "name": "CrearPedido",
+    "commands": [{
+      "id": "c3dad3cf-3200-44b0-8615-1f083647aaec",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.sushiclub.com.ar/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "44df7cd5-e7cc-4f8d-a332-201808932b87",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8c2ddc9a-dbcf-46b4-b569-31fb53b9f190",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuMobile > .noMobile > a",
+      "targets": [
+        ["css=#menuMobile > .noMobile > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Pedí online')])[4]", "xpath:link"],
+        ["xpath=//ul[@id='menuMobile']/li[8]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.sushiclub.com.ar/shop_init.php')])[4]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[8]/a", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win1890",
+      "windowTimeout": 2000
+    }, {
+      "id": "842b69bc-8b81-49d5-b960-ab813da7afcf",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win1890}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b638be51-9d81-4316-a7e0-5304fcddfe8f",
+      "comment": "",
+      "command": "click",
+      "target": "id=tipoTakeAway",
+      "targets": [
+        ["id=tipoTakeAway", "id"],
+        ["css=#tipoTakeAway", "css:finder"],
+        ["xpath=//button[@id='tipoTakeAway']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Take Away (hasta 30% off)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c8907ec-47b2-4a1f-b907-7304d86fb772",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.fa-chevron-down",
+      "targets": [
+        ["css=.fa-chevron-down", "css:finder"],
+        ["xpath=//button[@id='dateInit']/i", "xpath:idRelative"],
+        ["xpath=//button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cdef7247-0c1f-4eb0-99e2-c95ac0c7cfe9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-chevron-down",
+      "targets": [
+        ["css=.fa-chevron-down", "css:finder"],
+        ["xpath=//button[@id='dateInit']/i", "xpath:idRelative"],
+        ["xpath=//button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "772bc71f-dab0-4bb5-8163-bde61b8328e3",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.fa-chevron-down",
+      "targets": [
+        ["css=.fa-chevron-down", "css:finder"],
+        ["xpath=//button[@id='dateInit']/i", "xpath:idRelative"],
+        ["xpath=//button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cdfa9306-0dc1-4899-84a6-0a5b53e66eeb",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.col-md-12 > .min_widt_btns",
+      "targets": [
+        ["css=.col-md-12 > .min_widt_btns", "css:finder"],
+        ["xpath=//div[2]/center", "xpath:position"],
+        ["xpath=//center[contains(.,'Continuar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c80e45b8-3066-4f44-a9ee-9e69249522c3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Nuevo usuario",
+      "targets": [
+        ["linkText=Nuevo usuario", "linkText"],
+        ["css=.botonBox:nth-child(7) > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Nuevo usuario')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'shop_local_takeaway.php')]", "xpath:href"],
+        ["xpath=//div[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Nuevo usuario')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1c9cddb-1fb8-43e5-8372-e8c8ed59ba94",
+      "comment": "",
+      "command": "click",
+      "target": "id=localizacion",
+      "targets": [
+        ["id=localizacion", "id"],
+        ["name=localizacion", "name"],
+        ["css=#localizacion", "css:finder"],
+        ["xpath=//select[@id='localizacion']", "xpath:attributes"],
+        ["xpath=//form[@id='formTakeAway']/div[2]/div/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "66f88672-4484-4e14-89ad-044bf529dc71",
+      "comment": "",
+      "command": "select",
+      "target": "id=localizacion",
+      "targets": [],
+      "value": "label=Buenos Aires"
+    }, {
+      "id": "96a47cdc-50c8-435f-b825-3bf59ac967f1",
+      "comment": "",
+      "command": "click",
+      "target": "id=sucursalBUE",
+      "targets": [
+        ["id=sucursalBUE", "id"],
+        ["css=#sucursalBUE", "css:finder"],
+        ["xpath=//select[@id='sucursalBUE']", "xpath:attributes"],
+        ["xpath=//form[@id='formTakeAway']/div[2]/div/div/div[2]/div/select[2]", "xpath:idRelative"],
+        ["xpath=//select[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ecd3d68d-31eb-4fad-9ce8-3e71a01b8600",
+      "comment": "",
+      "command": "select",
+      "target": "id=sucursalBUE",
+      "targets": [],
+      "value": "label=Pilar Paralelo 50"
+    }, {
+      "id": "78c04b53-75f9-4b6e-89aa-405ac549434f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-dorado",
+      "targets": [
+        ["css=.btn-dorado", "css:finder"],
+        ["xpath=//input[@value='Continuar']", "xpath:attributes"],
+        ["xpath=//form[@id='formTakeAway']/div[2]/div/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1bb62444-6fd2-4afa-92a4-ab871bfeb27b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.productoShop:nth-child(5) .sumar:nth-child(1)",
+      "targets": [
+        ["css=.productoShop:nth-child(5) .sumar:nth-child(1)", "css:finder"],
+        ["xpath=//div[3]/a/div[2]/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "90c5eb72-b94a-4f20-8b02-f6d243da70a7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Agregar a mi pedido (7200)",
+      "targets": [
+        ["linkText=Agregar a mi pedido (7200)", "linkText"],
+        ["css=.btn-dorado", "css:finder"],
+        ["xpath=//a[contains(text(),'Agregar a mi pedido (7200)')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"agregarProductoPromoInteligente(event,371,$('.cantDropPi').val());\"]", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '#')])[91]", "xpath:href"],
+        ["xpath=//div[2]/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Agregar a mi pedido (7200)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3447eb6-f997-4328-a679-37de9cc6ab9b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Finalizar pedido",
+      "targets": [
+        ["linkText=Finalizar pedido", "linkText"],
+        ["css=.btn-dorado", "css:finder"],
+        ["xpath=//a[contains(text(),'Finalizar pedido')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'shop_checkout.php')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Finalizar pedido')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a32f04c1-3734-4458-9e86-27f5ab2343ff",
+      "comment": "",
+      "command": "click",
+      "target": "name=no_wpp",
+      "targets": [
+        ["name=no_wpp", "name"],
+        ["css=.checkWpp", "css:finder"],
+        ["xpath=//input[@name='no_wpp']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce40905b-c224-4384-a51d-a2777ab5f1e3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.genericDescrip",
+      "targets": [
+        ["css=.genericDescrip", "css:finder"],
+        ["xpath=//body/div[8]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d28719d-e458-419b-849e-7ccf86f3068a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.botonF > .btn",
+      "targets": [
+        ["css=.botonF > .btn", "css:finder"],
+        ["xpath=//input[@value='Actualizar']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "50048353-8245-43e5-81fb-6e98b40d9449",
+      "comment": "",
+      "command": "click",
+      "target": "id=swal2-content",
+      "targets": [
+        ["id=swal2-content", "id"],
+        ["css=#swal2-content", "css:finder"],
+        ["xpath=//div[@id='swal2-content']", "xpath:attributes"],
+        ["xpath=//div/div[6]", "xpath:position"]
+      ],
+      "value": "Tu número ha sido actualizado correctamente"
+    }, {
+      "id": "e9200d5a-a085-49c2-ac8a-f60b3829eb81",
+      "comment": "",
+      "command": "click",
+      "target": "css=.swal2-confirm",
+      "targets": [
+        ["css=.swal2-confirm", "css:finder"],
+        ["xpath=(//button[@type='button'])[8]", "xpath:attributes"],
+        ["xpath=//div[10]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ok')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "2710dc9f-b0a1-4b3f-8b61-813eb185e513",
+    "name": "CrearReserva",
+    "commands": [{
+      "id": "8d4d3acb-2218-4a19-ab82-0037c753ae53",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.sushiclub.com.ar/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "95f6a0ac-046a-46e2-83bb-fa923b9a61f2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bb3ca67e-3c05-4c4f-afe4-337ac3260be1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.top-reservas a",
+      "targets": [
+        ["css=.top-reservas a", "css:finder"],
+        ["xpath=(//a[contains(text(),'reservas Online')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'reservas.php')])[2]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "77f273a1-ed82-4460-9ed5-ff65d8d70d60",
+      "comment": "",
+      "command": "click",
+      "target": "name=local_reserva",
+      "targets": [
+        ["name=local_reserva", "name"],
+        ["css=.localReservaSelect", "css:finder"],
+        ["xpath=//select[@name='local_reserva']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ead5de88-aed6-4d9f-bc3d-c8521a82675a",
+      "comment": "",
+      "command": "select",
+      "target": "name=local_reserva",
+      "targets": [],
+      "value": "label=Caballito"
+    }, {
+      "id": "80a9e9f7-b4a5-4856-a412-c5f4c273439f",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.\\_jstext",
+      "targets": [
+        ["css=.\\_jstext", "css:finder"],
+        ["xpath=//button[@id='dateInit']/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d49c1398-11fc-4b4a-acbb-c12866839167",
+      "comment": "",
+      "command": "click",
+      "target": "css=.\\_jstext",
+      "targets": [
+        ["css=.\\_jstext", "css:finder"],
+        ["xpath=//button[@id='dateInit']/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c65e11b-1a34-4cff-b638-547cbacb2e2b",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.\\_jstext",
+      "targets": [
+        ["css=.\\_jstext", "css:finder"],
+        ["xpath=//button[@id='dateInit']/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b006ef6-2fb5-4a23-8ec2-f73291a08d05",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.col-md-12:nth-child(2)",
+      "targets": [
+        ["css=.col-md-12:nth-child(2)", "css:finder"],
+        ["xpath=//form/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "db3481a2-eee3-45c4-a254-a5b4c53b0816",
+      "comment": "",
+      "command": "click",
+      "target": "name=nombre",
+      "targets": [
+        ["name=nombre", "name"],
+        ["css=.JSonlyBarrioCerrado .form-control", "css:finder"],
+        ["xpath=//input[@name='nombre']", "xpath:attributes"],
+        ["xpath=//form[@id='formReservas']/div[2]/div/center/div/div/input", "xpath:idRelative"],
+        ["xpath=//center/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b87190dd-56f3-42dd-ae2b-340c9e3c78bb",
+      "comment": "",
+      "command": "type",
+      "target": "name=nombre",
+      "targets": [
+        ["name=nombre", "name"],
+        ["css=.JSonlyBarrioCerrado .form-control", "css:finder"],
+        ["xpath=//input[@name='nombre']", "xpath:attributes"],
+        ["xpath=//form[@id='formReservas']/div[2]/div/center/div/div/input", "xpath:idRelative"],
+        ["xpath=//center/div/div/input", "xpath:position"]
+      ],
+      "value": "Diana"
+    }, {
+      "id": "654955b3-1ad7-4a59-823b-cb678a416be1",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-group:nth-child(3) .form-control",
+      "targets": [
+        ["css=.form-group:nth-child(3) .form-control", "css:finder"],
+        ["xpath=(//input[@name='apellido'])[3]", "xpath:attributes"],
+        ["xpath=//form[@id='formReservas']/div[2]/div/center/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//center/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Zambrano"
+    }, {
+      "id": "140d6964-ebbc-4af4-a23f-e9be8e079256",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.form-group:nth-child(4) .form-control", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//form[@id='formReservas']/div[2]/div/center/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "diana12zambrano@gmail.com"
+    }, {
+      "id": "6351d968-0aed-450e-8f2c-92921fcde972",
+      "comment": "",
+      "command": "click",
+      "target": "name=documento",
+      "targets": [
+        ["name=documento", "name"],
+        ["css=.form-group:nth-child(5) .form-control", "css:finder"],
+        ["xpath=//input[@name='documento']", "xpath:attributes"],
+        ["xpath=//form[@id='formReservas']/div[2]/div/center/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef4c16a7-3fe8-4e6d-a95a-22a1b130e602",
+      "comment": "",
+      "command": "type",
+      "target": "name=documento",
+      "targets": [
+        ["name=documento", "name"],
+        ["css=.form-group:nth-child(5) .form-control", "css:finder"],
+        ["xpath=//input[@name='documento']", "xpath:attributes"],
+        ["xpath=//form[@id='formReservas']/div[2]/div/center/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "1110"
+    }, {
+      "id": "76f261bc-3ef3-4af8-b5a1-edc9c73af7d0",
+      "comment": "",
+      "command": "click",
+      "target": "name=celular",
+      "targets": [
+        ["name=celular", "name"],
+        ["css=.form-group:nth-child(6) .form-control", "css:finder"],
+        ["xpath=//input[@name='celular']", "xpath:attributes"],
+        ["xpath=//form[@id='formReservas']/div[2]/div/center/div[5]/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "41995474-0f66-48e2-a87f-9f63438d1af9",
+      "comment": "",
+      "command": "type",
+      "target": "name=celular",
+      "targets": [
+        ["name=celular", "name"],
+        ["css=.form-group:nth-child(6) .form-control", "css:finder"],
+        ["xpath=//input[@name='celular']", "xpath:attributes"],
+        ["xpath=//form[@id='formReservas']/div[2]/div/center/div[5]/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": "3134671430"
+    }, {
+      "id": "3a095899-31c1-4aa8-8097-99dec4e68186",
+      "comment": "",
+      "command": "click",
+      "target": "id=cantidadPersonas",
+      "targets": [
+        ["id=cantidadPersonas", "id"],
+        ["name=cantidad_personas", "name"],
+        ["css=#cantidadPersonas", "css:finder"],
+        ["xpath=//input[@id='cantidadPersonas']", "xpath:attributes"],
+        ["xpath=//form[@id='formReservas']/div[2]/div/center/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "62740326-d2bb-4e69-a9af-5444021d7d83",
+      "comment": "",
+      "command": "type",
+      "target": "id=cantidadPersonas",
+      "targets": [
+        ["id=cantidadPersonas", "id"],
+        ["name=cantidad_personas", "name"],
+        ["css=#cantidadPersonas", "css:finder"],
+        ["xpath=//input[@id='cantidadPersonas']", "xpath:attributes"],
+        ["xpath=//form[@id='formReservas']/div[2]/div/center/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": "4"
+    }, {
+      "id": "2bac3414-6d8e-42d7-8dae-0ae1383a8eea",
+      "comment": "",
+      "command": "click",
+      "target": "name=observaciones",
+      "targets": [
+        ["name=observaciones", "name"],
+        ["css=.form-group:nth-child(8) .form-control", "css:finder"],
+        ["xpath=//input[@name='observaciones']", "xpath:attributes"],
+        ["xpath=//form[@id='formReservas']/div[2]/div/center/div[7]/div/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7a2eff7-1594-43e5-962a-91e218cb6500",
+      "comment": "",
+      "command": "type",
+      "target": "name=observaciones",
+      "targets": [
+        ["name=observaciones", "name"],
+        ["css=.form-group:nth-child(8) .form-control", "css:finder"],
+        ["xpath=//input[@name='observaciones']", "xpath:attributes"],
+        ["xpath=//form[@id='formReservas']/div[2]/div/center/div[7]/div/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div/input", "xpath:position"]
+      ],
+      "value": "cumpleaños"
+    }, {
+      "id": "c8d8816a-abb8-4612-80df-3cfe428aaaa4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btnnewQ",
+      "targets": [
+        ["css=.btnnewQ", "css:finder"],
+        ["xpath=//form[@id='formReservas']/div[2]/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Reservar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cdf1b900-8680-423b-bd6a-9d710f8a4af0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.swal2-modal",
+      "targets": [
+        ["css=.swal2-modal", "css:finder"],
+        ["xpath=//div[10]/div", "xpath:position"]
+      ],
+      "value": "Su reserva ha sido exitosa!\\nTu reserva ha sido confirmada. Te esperamos!"
+    }, {
+      "id": "a044f922-ee80-4333-af30-74296a9617aa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.swal2-confirm",
+      "targets": [
+        ["css=.swal2-confirm", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[10]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ok')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "deffb3c6-2348-47c0-95d9-659d4fc1ee05",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.sushiclub.com.ar/"],
+  "plugins": []
+}
